@@ -5,8 +5,9 @@
     <link rel="shortcut icon" type="x-icon" href="images/logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plán rekonštrukcie</title>
+    <title>Gymnázium Púchov</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,8 +17,7 @@
             <img src="images/header-removebg-preview.png" alt="Logo Gymnázium Púchov" title="Gymnázium Púchov">
         </a>
         <h1 class="vertical_align_fix" id="logotext">
-            <a href="index.html" id="logo" title="Gymnázium Púchov">
-                Gymnázium Púchov</a>
+            <a href="index.html" id="logo" title="Gymnázium Púchov">Gymnázium Púchov</a>
         </h1>
         <!--<div id="search"></div>
         <form id="search" method="get" action="http://www.gympb.sk/vyhladavanie.html?page_id=149">
@@ -34,15 +34,17 @@
         </form>-->
 
         <div class="box">
-                <input type="text" name="q" value="" placeholder="Hľadať">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <form id="searchForm" action="hladat.html" method="post" name="searchForm">
+                <input type="text" name="searchword" id="search_searchword" class="inputbox" placeholder="Hľadať"/>
+                <button name="Search" onclick="this.form.submit()" class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
         </div>
     </div>
 
         <div class="menu-bar">
             <ul>
-                <li><a href="index.html" title="">Domov</a></li>
-                <li class="active"><a href="o_skole/historia_skoly.html" title="">O škole</a>
+                <li class="active"><a href="index.html" title="">Domov</a></li>
+                <li><a href="o_skole/historia_skoly.html" title="">O škole</a>
                     <div class="sub-menu-1">
                         <ul>
                             <li><a href="o_skole/historia_skoly.html">História školy</a> </li>
@@ -97,7 +99,7 @@
         <div class="left-main">
             <div class="menu-2">
                 <ul>
-                    <li><a href="" title="">Pre žiakov</a> </li>
+                    <li><a href="pre_ziakov.html" title="">Pre žiakov</a> </li>
                     <li><a href="" title="">Pre rodičov</a> </li>
                     <li><a href="" title="">Podujatia, akcie</a> </li>
                     <li><a href="" title="">Školský časopis - Gympsy</a> </li>
@@ -114,8 +116,8 @@
         <div class="right-main">
             <div class="toplist">
                 <h4>Informácie:</h4>
-                <img src="http://toplist.sk/count.asp?id=1224505&amp;logo=bc" id="count" alt="TOPlist"><br><br>
-                <div class="potvrdenie"><span style="font-size: 10pt;"><a href="https://help.edupage.org/text.php?id=2755&amp;lang=sk" target="_blank">Potvrdenie o návšteve školy<br><br></a></span></div>
+                <img src="http://toplist.sk/count.asp?id=1224505&logo=bc" id="count" alt="TOPlist"><br><br>
+                <div class="potvrdenie"><span style="font-size: 10pt;"><a href="https://help.edupage.org/text.php?id=2755&lang=sk" target="_blank">Potvrdenie o návšteve školy<br><br></a></span></div>
                 <div>
                     <a href="https://www.facebook.com/Gymn%C3%A1zium-P%C3%BAchov-1133590770011503/" target="_blank">
                         <img src="images/logo-fb.png" alt="Gymnázium Púchov Facebook" title="Facebook" width="44" height="40">
@@ -146,88 +148,28 @@
 
         <main>
             <div class="main">
-                <div class="content">
-                    <div class="outer">
-                        <div class="inner">
-                            <h3>Plán rekonštrukcie</h3>
-                        </div>
-                        <p><strong>Plán rekonštrukcie a opráv školy:</strong></p>
-                        <ol style="font-size: 15px">
-                            <li>zateplenie budovy E</li>
-                            <li>zníženie podhľadov v triedach budovy E</li>
-                            <li>regulácia vykurovania s ohľadom na lepšie vykurovanie budovy E</li>
-                            <li>výmena podzemných rozvodov tepla medzi budovami A,C,D a E</li>
-                            <li>oprava toaliet v budove B, C a E, v roku 2021 príprava projektovej dokumentácie</li>
-                            <li>dostavba balkóna k budove E, realizácia v roku 2021</li>
-                            <li>prístavba telocvične</li>
-                            <li>vybudovanie podkrovných priestorov v budove E: cudzojazyčná čitáteň, kaplnka</li>
-                            <li>obnova vestibulu v budove E</li>
-                            <li>výmena elektrických rozvodov a osvetlenia chodieb.</li>
-                        </ol>
-                        <p>Realizácia plánovaných akcií budete postupovať podľa finančných prostriedkov, ktoré získame od zriaďovateľa a z projektov.</p>
-                        <p>V Púchove 1.9.2021 M.Kubičár</p>
-                        <hr>
-                        <p><strong>Plán rekonštrukcie a opráv školy:</strong></p>
-                        <ol style="font-size: 15px">
-                            <li>dokončennie výstavby astronomickej pozorovateľne na budove E, <strong>ukončené 2020</strong></li>
-                            <li>zateplenie budovy E</li>
-                            <li>rekonštrukcia podkrovných priestorov budov B a C, <strong>ukončené 2020</strong></li>
-                            <li>výmena rozvodov tepla medzi budovami A,C,D a E</li>
-                            <li>výmena podláh v budove B a C, <strong>ukončené 2020</strong></li>
-                            <li>oprava toaliet v budove B a E</li>
-                            <li>dostavba balkóna k budove E.</li>
-                        </ol>
-                        <p>Realizácia plánovaných akcií budete postupovať podľa finančných prostriedkov, ktoré získame od zriaďovateľa a z projektov.</p>
-                        <p>V Púchove 2.9.2019 M.Kubičár</p>
-                        <hr>
-                        <p><strong>Postup rekonštrukcie školy po veľkej rekonštrukcii budov A,B,C a D v roku 2013:</strong></p>
-                        <ol style="font-size: 15px">
-                            <li>upravili sme vstup do školy odstránením chátrajúceho prístrešku pred hlavným vchodom a doplnením lavičiek,kvetináčov a živého plota pred školou, a stojanov na bicykle v záhrade školy, na konci roku 2014,</li>
-                            <li>pripravujeme výmenu okien budovy škôlky, budovy E, v roku 2015.</li>
-                        </ol>
-                        <p><strong>Plán:</strong></p>
-                        <ol>
-                            <li>rekonštrukcia spojovacieho prístrešku do budovy E,</li>
-                            <li>výmena vstupných dverí budovy A,</li>
-                            <li>výmena rozvodov tepla medzi budovami</li>
-                            <li>výmena a zateplenie striech na budove E.</li>
-                        </ol>
-                        <p>K realizácii plánovaných akcií budeme potrebovať pomoc pri získavaní financií.</p>
-                        <p>V Púchove 2.5.2015 M.Kubičár</p>
-                        <hr>
-                        <p>Projekt s názvom <strong>Rekonštrukcia a dostavba Gymnázia v Púchove</strong> je zavŕšený. Po štúdii z roku 2007 vznikli čiastočné stavebné projekty na základnú rekonštrukciu školy. Dňa 22.3.2012 sme odovzdali stavenisko firme <strong>VION&amp;INGSTEEL&amp;PSJ Hydrotranzit- združenie, Zlaté Moravce</strong>, čím <strong>prestavba školy oficiálne začala</strong>. <strong>Prestavba bola ukončená na konci októbra 2012. </strong></p>
-                        <p><strong>Čo sa urobilo:</strong></p>
-                        <ol>
-                            <li>telocvičňa: fasáda, v nej sú osadené aj búdky pre netopierov a dážďovníkov, zamurovanie okien v 1/2, výmena strechy, výmena palubovky, výmena vonkajších dverí</li>
-                            <li>budova A: fasáda, výmena okien a vonkajších dverí, inštalácia štrukturovanej kabeláže</li>
-                            <li>budova B a C: výmena okien, výmena strechy, zateplenie podkrovia, 16 strešných okien, inštalácia štrukturovanej kabeláže</li>
-                        </ol>
-                        <p><strong>Čo sa ešte dorobí:</strong></p>
-                        <ol>
-                            <li>žalúzie do tried a kabinetov</li>
-                            <li>vstupné dvere A</li>
-                        </ol>
-                        <p><strong>Čo sme urobili nad rámec projektu:</strong></p>
-                        <ol>
-                            <li>prednú záhradu z darovanej zelene z firmy Continental Púchov</li>
-                            <li>výsadbu zelene vo vnútornej záhrade z projektu Enviroprojekt 2012</li>
-                            <li>terasy a spojovací chodník medzi budovami A a D, august 2013</li>
-                            <li>nová učebňa informatiky z prostriedkov Rodičovskej rady, september 2013</li>
-                            <li>otvorenie školského Divadla v podkroví, september 2013</li>
-                        </ol>
-                        <p><strong>Nad rámec projektu pripravujeme:</strong></p>
-                        <ol>
-                            <li>múrik pred budovou A a B</li>
-                            <li>úpravu školskej záhrady so sochou z projektu Tesco pre zdravšie mestá</li>
-                        </ol>
-                        <p><strong>Nad rámec projektu pripravujeme:</strong></p>
-                        <ol>
-                            <li>oprava spojovacieho krčka medzi budovami A a E</span></li>
-                            <li>zateplenie budovy E</span></li>
-                        </ol>
-                        <p>V Púchove 4.9.2013, M.Kubičár</p>
-                        <p><a href="docs/plan_rekonstrukcie/Rozsah_rekontrukcie_koly.docx">Rozsah rekonštrukcie je zverejnený TU</a></p>
+                <div class="outer">
+                    <div class="inner">
+                        <h2>Hľadať</h2>
                     </div>
+                    <form id="searchForm" action="hladat.html" method="post" name="searchForm">
+                        <table class="contentpaneopen">
+                            <tr>
+                                <td nowrap="nowrap">
+                                    <label for="search_searchword">
+                                        Hľadaný výraz:
+                                    </label>
+                                </td>
+                                <td nowrap="nowrap">
+                                    <input type="text" name="searchword" id="search_searchword" size="30" maxlength="20" value="" class="inputbox" />
+                                <td width="100%" nowrap="nowrap">
+                                    <button name="Search" onclick="this.form.submit()" class="button">Hľadať</button>
+                                </td>
+                        </table>
+                        <input type="radio" name="searchphrase" id="searchphraseall" value="all" checked="checked">
+                        <label for="searchphraseall">Všetky slová</label>
+                        <input type="hidden" name="task"   value="search" />
+                    </form>
                 </div>
             </div>
         </main>

@@ -71,6 +71,15 @@ input{
     background: none;
     font-size: 18px;
 }
+.inputbox{
+    float: left;
+    width: 80%;
+}
+.button{
+    float: right;
+    width: 10%;
+    border: none;
+}
 .fa-solid:hover{
     color: orangered;
     cursor: pointer;
